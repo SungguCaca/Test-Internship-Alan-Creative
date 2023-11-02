@@ -1,0 +1,328 @@
+/* App.css */
+.App {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.bill {
+  flex: 1;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 25%;
+  height: 7%;
+  max-height: 190px;
+  margin: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+
+.categories {
+  flex: 0.7;
+  flex-wrap: wrap;
+}
+
+.category {
+  width: 50%;
+  height: 160px; 
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin-right: 10px; 
+}
+
+.menu {
+  flex: 1.8;
+  margin-right: 10px; 
+}
+
+.category img{
+  width: 100%;
+}
+.category h3{
+  padding: 0;
+  margin: 0;
+}
+
+.product img {
+  width: 100%;
+  height: 130px;
+}
+.product h3{
+  margin: 0;
+  padding: 0;
+}
+
+.bill h6 {
+  text-align: center;
+}
+
+.bill-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #ccc;
+}
+
+.bill-profile img {
+  max-width: 30px;
+  max-height: 30px;
+  margin-right: 10px;
+}
+
+.bill-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bill-title h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.bill-title img {
+  max-width: 30px;
+  max-height: 30px;
+  margin-left: 10px;
+}
+
+.bill-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.bill-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.bill-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.clear-button {
+  background: white;
+  border: none;
+  width:100%;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5px 10px;
+}
+
+.bill-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.bill-buttons button {
+  color: rgb(0, 0, 0);
+  width:100%;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 1px;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-inner {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.popup h2 {
+  margin: 0;
+}
+
+.popup input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.popup h3 {
+  margin: 0;
+}
+
+.popup button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media print {
+  .popup {
+    display: none;
+  }
+}
+
+
+/* Tampilan Desktop */
+@media screen and (min-width: 1024px) {
+  .App {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product {
+    width: 25%;
+    height: 7%;
+    max-height: 190px;
+    margin: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+
+  .category {
+    width: 50%;
+    height: 160px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin-right: 10px;
+  }
+
+  .product img {
+    width: 100%;
+    height: 130px;
+  }
+
+  .product h3 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Tampilan Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .App {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    width: 45%;
+    height: 10%;
+    max-height: 170px;
+    margin: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+
+  .category {
+    width: 90%;
+    height: 150px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .product img {
+    width: 100%;
+    height: 100px;
+  }
+
+  .product h3 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Tampilan Mobile */
+@media screen and (max-width: 767px) {
+  .App {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    width: 90%;
+    height: 15%;
+    max-height: 130px;
+    margin: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+
+  .category {
+    width: 90%;
+    height: 150px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .product img {
+    width: 100%;
+    height: 100px;
+  }
+
+  .product h3 {
+    margin: 0;
+    padding: 0;
+  }
+}
